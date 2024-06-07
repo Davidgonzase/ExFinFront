@@ -63,7 +63,7 @@ export const handler: Handlers = {
 
       headers.set("location", "/videos");
       return new Response(null, {
-        status: 307,
+        status: 303,
         headers,
       });
     } else if (res.status == 400 || res.status == 404 || res.status == 500) {
